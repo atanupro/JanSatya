@@ -1,3 +1,7 @@
+from langdetect import detect
+import re
+
 def preprocess_text(text):
-    # Simple cleaner
-    return text.strip().lower()
+    text = text.lower()
+    text = re.sub(r'[^a-zA-Z0-9\s]', '', text)
+    return text

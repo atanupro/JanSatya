@@ -1,5 +1,8 @@
 def predict_sentiment(text):
-    # Dummy logic, replace with real sentiment model
-    if "hate" in text.lower() or "fear" in text.lower():
+    # Placeholder logic
+    if any(w in text.lower() for w in ["fear", "hate", "panic"]):
         return "Negative"
-    return "Neutral"
+    elif any(w in text.lower() for w in ["love", "happy", "hope"]):
+        return "Positive"
+    else:
+        return "Neutral"
