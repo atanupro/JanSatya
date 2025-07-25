@@ -1,5 +1,11 @@
+import joblib
+import os
+
+# Load trained model and vectorizer (placeholders for real model files)
+model = joblib.load("model.pkl")
+vectorizer = joblib.load("vectorizer.pkl")
+
 def predict_fake_news(text):
-    # Dummy logic, replace with real ML model
-    if "vaccine" in text.lower():
-        return "Likely Fake"
-    return "Likely Real"
+    vec = vectorizer.transform([text])
+    prediction = model.predict(vec)[0]
+    return "Fake" if prediction == 1 else "Real"
