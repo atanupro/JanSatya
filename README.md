@@ -1,3 +1,3 @@
-# JanSatya
+# JanSatya (Advanced)
 
-AI-Based Multilingual Fake News and Sentiment Analysis System for Community Rumor Detection in Health, Religious, and Social Issues.
+Multilingual Fake News & Sentiment Detection System powered by ML. Domains: NLP + Sentiment Analysis + ML

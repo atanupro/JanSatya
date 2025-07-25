@@ -1,7 +1,6 @@
 import joblib
-import os
 
-# Load trained model and vectorizer (placeholders for real model files)
+# Load model and vectorizer (assumes both are in root directory)
 model = joblib.load("model.pkl")
 vectorizer = joblib.load("vectorizer.pkl")
 
